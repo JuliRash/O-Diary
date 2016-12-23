@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Page-404 {% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='details/css/bootstrap.css') }}">
+</head>
+<body style="background-image: url({{url_for('static' , filename='front_page/assets/img/404.jpg')}})">
+{% block content %}
+
+<center><h1>Uh-Oh</h1></center>
+<h2 class=""><center>This page does not exist</center></h2>
+<center><h3>go to our <a href="{{url_for('home')}}" class="btn btn-info">Home</a> page</h3></center>
+{% endblock %}
+</body>
+</html>

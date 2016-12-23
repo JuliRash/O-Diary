@@ -1,0 +1,3 @@
+#info about test users 
+username	=	'julipels'
+password	=	'thunderstorm2'
